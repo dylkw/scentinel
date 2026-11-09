@@ -1,11 +1,16 @@
 {
-  "name": "fragrance-monitor-telegram",
+  "name": "scentinel",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "node --env-file=.env --watch src/server.js",
-    "start": "node --env-file=.env src/server.js"
+    "start": "node --env-file=.env src/server.js",
+    "test": "node --test",
+    "reddit:session-check": "node --env-file=.env scripts/reddit-session-check.mjs",
+    "reddit:json-check": "node --env-file=.env scripts/reddit-json-check.mjs"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }
